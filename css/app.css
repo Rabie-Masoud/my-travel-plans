@@ -20,12 +20,10 @@ body {
     padding: 1em;
     width: 80%;
 }
-
-.destination-container {
-    display: flex;
-    flex-flow: wrap;
-    justify-content: center;
+.destination:hover h2 {
+    transform: rotate(0deg);
 }
+
 
 .destination {
     background: #03a9f4;
@@ -39,10 +37,15 @@ body {
     align-items: center;
     text-align: center;
 }
-
+.destination-container {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
 h2 {
     margin: 0;
     transform: rotate(-45deg);
+    transition: transform 0.5s;
     text-shadow: 0 0 5px #01579b;
 }
 
